@@ -1,1 +1,26 @@
-Howdy
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPS Sinatra</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+    <div class="navbar">
+    <div><a href="/rock">Play Rock</a></div>
+    <div><a href="/paper">Play Paper</a></div>
+    <div><a href="/scissors">Play Scissors</a></div>
+   </div>
+    <%= yield %>
+
+
+
+    <h2>We played rock!</h2>
+    <h2><%= @their_readout%></h2>
+    <h2><%= @outcome%></h2>
+    <a href="/">Rules</a>
+
+
+  </body>
+</html>
